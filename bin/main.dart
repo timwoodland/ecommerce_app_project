@@ -1,60 +1,7 @@
 import 'dart:io';
 
-class Product {
-  final int id;
-  final String name;
-  final double price;
-
-  const Product({required this.id, required this.name, required this.price});
-
-  String get diplayName => '($initial)${name.substring(1)}: \$$price';
-  String get initial => name.substring(0, 1);
-}
-
-class Item {
-  final Product product;
-  final int quantity;
-
-  const Item({required this.product, this.quantity = 1});
-
-  double get price => quantity * product.price;
-
-  @override
-  String toString() {
-    return '$quantity x ${product.name}: \$$price';
-  }
-}
-
-class Cart {
-  final Map<int, Item> _items = {};
-
-  void addProduct(Product product) {
-    final item = _items[product.id];
-    if (item == null) {
-      _items[product.id] = Item(product: product, quantity: 1);
-    } else {
-      _items[product.id] = Item(product: product, quantity: item.quantity + 1);
-    }
-  }
-
-  bool get isEmpty => _items.isEmpty;
-
-  double total() {
-    return _items.values
-        .map((item) => item.price)
-        .reduce((value, element) => value + element);
-  }
-
-  @override
-  String toString() {
-    if (_items.isEmpty) {
-      return 'Cart is empty';
-    }
-    final itemisedList =
-        _items.values.map((item) => item.toString()).join('\n');
-    return '------\n$itemisedList\nTotal: \$${total()}\n------';
-  }
-}
+import 'package:test/cart.dart';
+import 'package:test/product.dart';
 
 const allProducts = [
   Product(id: 1, name: 'apples', price: 1.60),
@@ -64,20 +11,6 @@ const allProducts = [
   Product(id: 5, name: 'mushrooms', price: 0.8),
   Product(id: 6, name: 'potatoes', price: 1.5),
 ];
-
-// Sudo code
-// loop
-//  user promp: view cart / add item / checkout
-//  if select == add item:
-//    choose product
-//    add it to the cart
-//    print cart
-//  else if select == view cart:
-//    print cart
-//  else if select == checkout:
-//    do checkout
-//    exit
-//  end
 
 void main() {
   final cart = Cart();
