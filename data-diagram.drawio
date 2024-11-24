@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1.1 Safari/605.1.15" version="24.9.0">
+  <diagram name="Page-1" id="UB2NewNGSWjz24TkdIKY">
+    <mxGraphModel dx="586" dy="336" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eW2_KkciDUc3k880AOeX-1" value="- id&lt;div&gt;- name&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- price&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=7;verticalAlign=top;spacingTop=2;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="140" y="290" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eW2_KkciDUc3k880AOeX-4" value="- product&lt;div&gt;- quantity&lt;/div&gt;&lt;div&gt;- &lt;i&gt;price&lt;/i&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=7;verticalAlign=top;spacingTop=2;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="290" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eW2_KkciDUc3k880AOeX-5" value="- items&lt;div&gt;- &lt;i&gt;total&lt;/i&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=7;verticalAlign=top;spacingTop=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="460" y="290" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eW2_KkciDUc3k880AOeX-6" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="eW2_KkciDUc3k880AOeX-1" target="eW2_KkciDUc3k880AOeX-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="330" as="sourcePoint" />
+            <mxPoint x="440" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eW2_KkciDUc3k880AOeX-7" value="" style="endArrow=classic;startArrow=halfCircle;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;startFill=0;" edge="1" parent="1" source="eW2_KkciDUc3k880AOeX-4" target="eW2_KkciDUc3k880AOeX-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="310" as="sourcePoint" />
+            <mxPoint x="460" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eW2_KkciDUc3k880AOeX-9" value="Product" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eW2_KkciDUc3k880AOeX-10" value="Item" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eW2_KkciDUc3k880AOeX-11" value="Cart" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
